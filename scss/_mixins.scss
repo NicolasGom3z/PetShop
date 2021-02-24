@@ -1,0 +1,24 @@
+// MEDIA QUERIES
+
+@mixin telefono {
+  @media (min-width: #{$telefono} ) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet} ) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop} ) {
+    @content;
+  }
+}
+
+// UTILIDADES
+
+@mixin resetSpace {
+  padding: 0;
+  margin: 0;
+}
