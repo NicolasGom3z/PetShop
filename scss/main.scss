@@ -36,12 +36,19 @@ header{
   width: 100%;
   height: 70px;
   background-color: $gris;
- 
+  @include desktop(){
+    justify-content: space-around ;
+  }
 
   .burger{
     font-size: 20px;
     color: $blanco;
     width: 50vw;
+
+    @include desktop(){
+      display: none;
+    }
+
   }
 
   nav{
@@ -54,10 +61,26 @@ header{
     background-color: $grisClaro;
     z-index: -1;
     transition: transform 300ms ease-in;
+
+    @include desktop(){
+      transform: unset;
+      position: unset;
+      z-index: unset;
+      background-color: unset;
+      width: unset;
+      padding: 0;
+      order: 2
+    }
+
     ul{
       
       @include resetSpace;
       list-style: none;
+      
+      @include desktop(){
+        display: flex;
+        
+      }
 
       li{
         margin: 25px 10px;
