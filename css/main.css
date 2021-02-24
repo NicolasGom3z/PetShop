@@ -13,13 +13,13 @@ body {
 }
 
 .header-act {
-  background-color: #232425;
+  background-color: #1c1d1e;
 }
 
 .slide-rigth {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  background-color: #232425;
+  background-color: #1c1d1e;
 }
 .slide-rigth li {
   opacity: 1;
