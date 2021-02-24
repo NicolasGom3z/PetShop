@@ -12,9 +12,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.header-act {
+  background-color: #232425;
+}
+
 .slide-rigth {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  background-color: #232425;
 }
 .slide-rigth li {
   opacity: 1;
@@ -33,6 +38,8 @@ header {
   width: 100%;
   height: 70px;
   background-color: #383B40;
+  -webkit-transition: background-color 500ms ease-in;
+  transition: background-color 500ms ease-in;
 }
 @media (min-width: 1024px) {
   header {
@@ -58,12 +65,12 @@ header nav {
   position: absolute;
   top: 70px;
   left: 0;
-  background-color: #41454a;
+  background-color: #383B40;
   z-index: -1;
-  -webkit-transition: -webkit-transform 300ms ease-in;
-  transition: -webkit-transform 300ms ease-in;
-  transition: transform 300ms ease-in;
-  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-transition: background-color 500ms ease-in, -webkit-transform 300ms ease-in;
+  transition: background-color 500ms ease-in, -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in, background-color 500ms ease-in;
+  transition: transform 300ms ease-in, background-color 500ms ease-in, -webkit-transform 300ms ease-in;
 }
 @media (min-width: 1024px) {
   header nav {
